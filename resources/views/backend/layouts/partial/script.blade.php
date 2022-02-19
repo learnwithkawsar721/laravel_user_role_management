@@ -22,7 +22,7 @@
  <script src="{{ asset('backend') }}/assets/js/line-chart.js"></script>
  <!-- all pie chart -->
  <script src="{{ asset('backend') }}/assets/js/pie-chart.js"></script>
+ 
  <!-- others plugins -->
  <script src="{{ asset('backend') }}/assets/js/plugins.js"></script>
  <script src="{{ asset('backend') }}/assets/js/scripts.js"></script>
- @yield('script')

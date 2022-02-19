@@ -12,4 +12,3 @@
 <link rel="stylesheet" href="{{ asset('backend') }}/assets/css/default-css.css">
 <link rel="stylesheet" href="{{ asset('backend') }}/assets/css/styles.css">
 <link rel="stylesheet" href="{{ asset('backend') }}/assets/css/responsive.css">
-@yield('css')

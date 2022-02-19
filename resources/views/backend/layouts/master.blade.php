@@ -8,6 +8,7 @@
     <title>@yield('title',"Dashboard")</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @includeIf('backend.layouts.partial.stylelink')
+    @yield('css')
     <!-- modernizr css -->
     <script src="{{ asset('backend') }}/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -221,6 +222,7 @@
     </div>
     <!-- offset area end -->
    @includeIf('backend.layouts.partial.script')
+   @yield('script')
 </body>
 
 </html>

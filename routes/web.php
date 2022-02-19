@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\BackendController;
+use App\Http\Controllers\Backend\RolesController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,6 @@ Auth::routes();
 Route::controller(BackendController::class)->prefix('admin')->group(function(){
     Route::get('/','index')->name('admin.dashboard');
 });
-
+Route::resource('roles',RolesController::class);
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
