@@ -40,7 +40,8 @@
                                        <td>{{ $loop->index+1 }}</td>
                                        <td>{{ $role->name }}</td>
                                        <td>
-                                           <button class="btn btn-danger">Delete</button>
+                                           <a href="{{ route('roles.edit',$role->id) }}" class="btn btn-success">Edit</a>
+                                           <a href="{{ route('roles.destroy',$role->id) }}" class="btn btn-danger">Delete</a>
                                        </td>
                                     </tr>
                                     @endforeach
